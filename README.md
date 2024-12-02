@@ -42,8 +42,13 @@ This website is automatically deployed to GitHub Pages using GitHub Actions.
 1. Create a new repository on GitHub
    - Go to https://github.com/new
    - Name the repository (e.g., `personal-website`)
-   - Make it public
+   - Choose visibility (public or private - both work with GitHub Pages)
    - Don't initialize with any files
+
+Note: If using a private repository:
+- The deployed website will still be publicly accessible
+- Only the source code remains private
+- Storage is limited to 500MB on the Free plan
 
 2. Push your code to GitHub
    ```bash
