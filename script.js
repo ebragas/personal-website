@@ -9,30 +9,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Form submission handling
-document.getElementById('contact-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    // Collect form data
-    const formData = new FormData(e.target);
-    const name = formData.get('name');
-    const email = formData.get('email');
-    const message = formData.get('message');
-
-    // Basic form validation
-    if (!name || !email || !message) {
-        alert('Please fill out all fields');
-        return;
-    }
-
-    // Here you would typically send the form data to a backend service
-    // For now, we'll just show a success message
-    alert('Thank you for your message, ' + name + '! I will get back to you soon.');
-    
-    // Reset the form
-    e.target.reset();
-});
-
 // Add subtle animations and interactions
 document.addEventListener('DOMContentLoaded', () => {
     // Fade in sections on scroll
